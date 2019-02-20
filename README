@@ -23,3 +23,7 @@ pip3 install -r requirements.txt
 
 cd examples/classifier_compression/
 pip install torchnet
+pip install --upgrade pip
+cd ../../ #go to the directory "distiller"
+pip install -r requirements.txt
+python compress_classifier.py --arch simplenet_cifar ../../../data.cifar10 -p 30 -j=1 --lr=0.01
