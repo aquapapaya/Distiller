@@ -29,3 +29,7 @@ pip install -r requirements.txt
 python compress_classifier.py --arch simplenet_cifar ../../../data.cifar10 -p 30 -j=1 --lr=0.01
 vi logs/2019.02.20-062648/2019.02.20-062648.log
 
+sudo nvidia-docker ps -a
+sudo nvidia-docker start e94a168f29b7
+sudo nvidia-docker attach e94a168f29b7
+
