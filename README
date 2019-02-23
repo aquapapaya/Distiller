@@ -35,6 +35,10 @@ sudo nvidia-docker start e94a168f29b7
 sudo nvidia-docker attach e94a168f29b7
 
 python3 compress_classifier.py --resume=../ssl/checkpoints/checkpoint_trained_ch_regularized_dense.pth.tar -a=resnet20_cifar ../../../data.cifar10 --summary=sparsity
-python3 compress_classifier.py --resume=../ssl/checkpoints/checkpoint_trained_channel_regularized_resnet20_finetuned.pth.tar -a=resnet20_cifar ../../../data.cifar10 --summary=compute
-python3 compress_classifier.py -a resnet20_cifar ../../../data.cifar10 --resume ../ssl/checkpoints/checkpoint_trained_dense.pth.tar --quantize-eval --evaluate
+vi /workspace/distiller/examples/classifier_compression/logs/2019.02.23-012712/2019.02.23-012712.log
 
+python3 compress_classifier.py --resume=../ssl/checkpoints/checkpoint_trained_channel_regularized_resnet20_finetuned.pth.tar -a=resnet20_cifar ../../../data.cifar10 --summary=compute
+vi /workspace/distiller/examples/classifier_compression/logs/2019.02.23-013230/2019.02.23-013230.log
+
+python3 compress_classifier.py -a resnet20_cifar ../../../data.cifar10 --resume ../ssl/checkpoints/checkpoint_trained_dense.pth.tar --quantize-eval --evaluate
+vi /workspace/distiller/examples/classifier_compression/logs/2019.02.23-013955/2019.02.23-013955.log
