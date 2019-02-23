@@ -56,3 +56,6 @@ sudo nvidia-docker attach d00de66f2324
 cd distiller/
 jupyter notebook --ip=172.17.0.2 --port=9999 --allow-root
 http://172.17.0.2:9999/?token=49b0775f39e0a73da92a36147abae09bcd029e36125bb37d #token is different every time
+
+cd /workspace
+
