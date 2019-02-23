@@ -61,3 +61,7 @@ cd /workspace
 mkdir data.imagenet
 cd data.imagenet/
 
+cd /workspace/distiller/tests
+pytest
+
+
